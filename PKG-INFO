@@ -1,0 +1,21 @@
+Metadata-Version: 1.0
+Name: aldryn-simple-glossary
+Version: 0.0.3
+Summary: Aldryn simple glossary
+======================
+
+Simple app to provide glossary features. This add-on is not language aware.
+
+
+************
+Installation
+************
+
+For aldryn users - just install aldryn-simple-glossary add-on to your project.
+
+Home-page: UNKNOWN
+Author: Divio AG
+Author-email: info@divio.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: OS Independent

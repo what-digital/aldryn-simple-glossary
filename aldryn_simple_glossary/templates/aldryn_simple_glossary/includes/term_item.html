@@ -1,0 +1,9 @@
+{% load cms_tags %}
+{% render_model_block term %}
+    <div class="simple-glossary term">
+        <h3 class="simple-glossary term-header">{{ instance.title }}</h3>
+        <div class="simple-glossary term-content">
+            {{ instance.description|safe }}
+        </div>
+    </div>
+{% endrender_model_block %}

@@ -1,0 +1,17 @@
+{% extends "aldryn_simple_glossary/base.html" %}
+{% load cms_tags i18n %}
+
+{% block simple_glossary_content %}
+    <div class="aldryn-simple-glossary">
+        {% include "aldryn_simple_glossary/includes/alphabet.html" %}
+        {% regroup object_list by first_letter as terms_groups %}
+        {% for term_group in terms_groups %}
+            <h3 id="{{ term_group.grouper }}" class="simple-glossary alphabet-letter">{{ term_group.grouper }}</h3>
+            <div class="simple-glossary term-list">
+                {% for term in term_group.list %}
+                    {% include "aldryn_simple_glossary/includes/term_item.html" %}
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+{% endblock simple_glossary_content %}
